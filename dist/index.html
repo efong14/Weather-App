@@ -6,12 +6,18 @@
     <title>Document</title>
   </head>
   <body>
-    <form>
-      <label for="city">City: </label>
-      <input type="text" id="city" />
-      <button id="unit">Celsius</button>
-      <button id="search">Search</button>
-    </form>
-    <div id="result"></div>
+    <div id="top">
+      <h1 id="header">Weather App</h1>
+      <form>
+        <input type="text" id="city" placeholder="Enter a city" />
+        <button id="search"><img id="searchImg" src="../icons/search.png" alt="" /></button>
+        <button id="unit">°C</button>
+      </form>
+    </div>
+    <div id="resultContainer">
+      <div id="result"></div>
+      <div id="condition"></div>
+      <div id="iconContainer"></div>
+    </div>
   <script defer src="main.js"></script></body>
 </html>
