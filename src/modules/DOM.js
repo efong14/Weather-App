@@ -26,7 +26,8 @@ const weatherDOM = (function () {
   function addIcon(condition) {
     document.getElementById('iconContainer').textContent = '';
     const myIcon = new Image();
-    myIcon.src = `../icons/${condition}.png`;
+    myIcon.src = `    https://github.com/visualcrossing/WeatherIcons/blob/main/PNG/4th%20Set%20-%20Monochrome/${condition}.png?raw=true`;
+    // myIcon.src = `../icons/${condition}.png`;
     document.getElementById('iconContainer').appendChild(myIcon);
   }
 
