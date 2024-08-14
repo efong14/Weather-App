@@ -1,3 +1,8 @@
+@font-face {
+  font-family: roboto;
+  src: url(../font/Roboto-Black.ttf);
+}
+
 body {
   display: grid;
   margin: 0px;
@@ -7,6 +12,7 @@ body {
   color: white;
   grid-template-rows: 1fr 4fr;
   font-size: 25px;
+  font-family: roboto;
 }
 
 #top {
@@ -27,8 +33,9 @@ input {
 #unit {
   margin: 15px;
   width: 50px;
+  height: 35px;
   font-size: 25px;
-  border-radius: 15px;
+  border-radius: 100px;
   border-style: hidden;
   background-color: #f99417;
   cursor: pointer;
@@ -52,8 +59,28 @@ input {
 }
 
 #resultContainer {
+  display: flex;
+  flex-direction: column;
   grid-row: 2/3;
   padding: 15px;
   box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.33) inset;
   background-color: #343a40;
+  font-size: 30px;
+}
+
+#location,
+#result,
+#conditionContainer {
+  height: 50px;
+}
+
+#conditionContainer {
+  display: flex;
+  align-items: center;
+}
+
+#iconContainer > img {
+  height: 50px;
+  width: 50px;
+  filter: invert(100%);
 }

@@ -5,7 +5,6 @@ async function getWeather(place, unit) {
       { mode: 'cors' }
     );
     const weatherData = await response.json();
-    console.log(weatherData);
     const temp = [
       weatherData.currentConditions.temp,
       weatherData.currentConditions.conditions,
@@ -13,7 +12,7 @@ async function getWeather(place, unit) {
     ];
     return temp;
   } catch (error) {
-    console.log('Please input name of city');
+    alert('Please input name of city');
   }
 }
 export { getWeather };
